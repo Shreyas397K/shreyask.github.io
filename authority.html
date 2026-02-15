@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authority | Shreyas K</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --red:#E10600;
+    --blue:#0B3D91;
+    --dark:#111111;
+    --gray:#6b7280;
+    --light:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:white;
+    color:var(--dark);
+    line-height:1.6;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    background:white;
+}
+
+nav h2 span{
+    color:var(--red);
+}
+
+nav a{
+    text-decoration:none;
+    font-weight:600;
+    color:var(--dark);
+}
+
+.section{
+    padding:80px 8%;
+}
+
+.section h2{
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.section h2::after{
+    content:'';
+    width:60px;
+    height:4px;
+    background:linear-gradient(90deg,var(--red),var(--blue));
+    display:block;
+    margin-top:10px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    padding:30px;
+    border-radius:15px;
+    background:#f9fafb;
+    border:1px solid rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    color:var(--gray);
+}
+
+.cta{
+    text-align:center;
+    margin-top:60px;
+}
+
+.cta button{
+    padding:14px 40px;
+    border:none;
+    border-radius:40px;
+    background:linear-gradient(135deg,var(--red),var(--blue));
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cta button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(225,6,0,0.25);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:var(--dark);
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>SHREYAS <span>K</span></h2>
+    <a href="index.html">← Back to Home</a>
+</nav>
+
+<section class="section">
+    <h2>Mentorship & Advisory</h2>
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Mock Interviews</h3>
+            <p>Technical interview simulations for .NET and Angular developers aiming for senior roles.</p>
+        </div>
+
+        <div class="card">
+            <h3>Career Strategy Sessions</h3>
+            <p>Guidance on promotion planning, salary growth strategy, and long-term positioning.</p>
+        </div>
+
+        <div class="card">
+            <h3>Architecture Review</h3>
+            <p>Feedback on system design, API structure, scalability decisions, and clean architecture.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Digital Products (Upcoming)</h2>
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>.NET Leadership Playbook</h3>
+            <p>A practical guide for developers transitioning into Team Lead roles.</p>
+        </div>
+
+        <div class="card">
+            <h3>Interview Preparation Toolkit</h3>
+            <p>Structured roadmap for mid-level developers targeting high-paying roles.</p>
+        </div>
+
+    </div>
+</section>
+
+<div class="cta">
+    <button>Work With Me</button>
+</div>
+
+<footer>
+© 2026 Shreyas K | Authority Through Experience
+</footer>
+
+</body>
+</html>

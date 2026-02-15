@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreyas K | Brand Platform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --red:#E10600;
+    --blue:#0B3D91;
+    --dark:#111111;
+    --light:#ffffff;
+    --gray:#6b7280;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    overflow-x:hidden;
+}
+
+/* ===== NAVIGATION ===== */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+}
+
+nav h2{
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+nav h2 span{
+    color:var(--red);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:600;
+    position:relative;
+    transition:0.3s;
+}
+
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    width:0%;
+    height:3px;
+    bottom:-6px;
+    left:0;
+    background:linear-gradient(90deg,var(--red),var(--blue));
+    transition:0.4s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    padding:120px 8%;
+    align-items:center;
+    gap:70px;
+}
+
+.hero-left{
+    animation:fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(40px)}
+    to{opacity:1; transform:translateY(0)}
+}
+
+.hero-left h1{
+    font-size:65px;
+    font-weight:900;
+    line-height:1.1;
+}
+
+.hero-left span{
+    background:linear-gradient(135deg,var(--red),var(--blue));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-left p{
+    margin-top:20px;
+    font-size:18px;
+    color:var(--gray);
+    max-width:520px;
+}
+
+.hero-left button{
+    margin-top:30px;
+    padding:15px 45px;
+    font-weight:700;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    background:linear-gradient(135deg,var(--red),var(--blue));
+    color:white;
+    transition:0.4s;
+}
+
+.hero-left button:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(225,6,0,0.25);
+}
+
+/* ===== CARD GRID ===== */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    animation:fadeUp 1.6s ease forwards;
+}
+
+.card{
+    padding:35px;
+    border-radius:20px;
+    background:white;
+    border:1px solid rgba(0,0,0,0.05);
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.4s;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height:5px;
+    width:100%;
+    background:linear-gradient(90deg,var(--red),var(--blue));
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:12px;
+    font-size:22px;
+    font-weight:800;
+}
+
+.card p{
+    font-size:14px;
+    color:var(--gray);
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    margin-top:100px;
+    padding:50px;
+    text-align:center;
+    background:var(--dark);
+    color:white;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:1000px){
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .card-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>SHREYAS <span>K</span></h2>
+    <ul>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="ventures.html">Ventures</a></li>
+        <li><a href="cinema.html">Cinema</a></li>
+        <li><a href="football.html">Football</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-left">
+        <h1>
+            Building a <span>Brand</span>.<br>
+            Not Just a Career.
+        </h1>
+        <p>
+            Full Stack .NET Developer | Team Leader | Visionary Builder.
+            Rooted in Responsibility. Driven by Global Impact.
+        </p>
+        <button onclick="location.href='career.html'">
+            Explore My Journey
+        </button>
+    </div>
+
+    <div class="card-grid">
+
+        <div class="card" onclick="location.href='career.html'">
+            <h3>Career</h3>
+            <p>Enterprise systems, leadership, backend architecture & scalable tech vision.</p>
+        </div>
+
+        <div class="card" onclick="location.href='personal.html'">
+            <h3>Personal</h3>
+            <p>Philosophy, discipline, long-term mindset and personal evolution.</p>
+        </div>
+
+        <div class="card" onclick="location.href='family.html'">
+            <h3>Family</h3>
+            <p>Responsibility, foundation, and the driving force behind ambition.</p>
+        </div>
+
+        <div class="card" onclick="location.href='ventures.html'">
+            <h3>Ventures</h3>
+            <p>Freelancing, collaborations, business ideas & future income streams.</p>
+        </div>
+		<div class="card" onclick="location.href='authority.html'">
+			<h3>Authority</h3>
+			<p>Structured mentorship, mock interviews & strategic guidance for career and tech leadership.</p>
+		</div>
+
+        <div class="card" onclick="location.href='cinema.html'">
+            <h3>Cinema</h3>
+            <p>Storytelling, visual ideas and long-term artistic exploration.</p>
+        </div>
+
+        <div class="card" onclick="location.href='football.html'">
+            <h3>Football</h3>
+            <p>Kerala roots, passion for the game and vision for Indian football.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+© 2026 Shreyas K | Strategic Vision. Long-Term Impact.
+</footer>
+
+</body>
+</html>
