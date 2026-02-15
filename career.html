@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career | Shreyas K</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --red:#E10600;
+    --blue:#0B3D91;
+    --dark:#111111;
+    --gray:#6b7280;
+    --light:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    background:white;
+}
+
+nav h2 span{
+    color:var(--red);
+}
+
+nav a{
+    text-decoration:none;
+    font-weight:600;
+    color:var(--dark);
+}
+
+/* ===== SECTION ===== */
+
+.section{
+    padding:80px 8%;
+}
+
+.section h2{
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.section h2::after{
+    content:'';
+    width:60px;
+    height:4px;
+    background:linear-gradient(90deg,var(--red),var(--blue));
+    display:block;
+    margin-top:10px;
+}
+
+/* ===== SUMMARY ===== */
+
+.summary p{
+    max-width:800px;
+    color:var(--gray);
+    font-size:17px;
+}
+
+/* ===== TIMELINE ===== */
+
+.timeline-item{
+    margin-bottom:40px;
+    padding:25px;
+    border-left:4px solid var(--red);
+    background:#f9fafb;
+    border-radius:8px;
+}
+
+.timeline-item h3{
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.timeline-item span{
+    font-size:14px;
+    color:var(--gray);
+}
+
+.timeline-item ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.timeline-item ul li{
+    margin-bottom:8px;
+}
+
+/* ===== PROJECT CARDS ===== */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    padding:25px;
+    border-radius:15px;
+    border:1px solid rgba(0,0,0,0.05);
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+    transition:0.3s;
+    background:white;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+.project-card h3{
+    margin-bottom:10px;
+}
+
+.project-card p{
+    font-size:14px;
+    color:var(--gray);
+}
+
+/* ===== LEADERSHIP ===== */
+
+.leadership-list{
+    max-width:800px;
+}
+
+.leadership-list li{
+    margin-bottom:12px;
+}
+
+/* ===== TECH STACK ===== */
+
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.tech-card{
+    padding:20px;
+    border-radius:12px;
+    background:#f9fafb;
+    border-left:4px solid var(--blue);
+}
+
+.tech-card h4{
+    margin-bottom:8px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:var(--dark);
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>SHREYAS <span>K</span></h2>
+    <a href="index.html">← Back to Home</a>
+</nav>
+
+<!-- PROFESSIONAL SUMMARY -->
+
+<section class="section summary">
+    <h2>Professional Summary</h2>
+    <p>
+        Team Lead with 5+ years of experience building enterprise-grade applications using 
+        .NET Core and Angular. Experienced in designing scalable APIs, mentoring developers, 
+        handling client interactions, and delivering production-ready solutions in agile environments.
+        Focused on architecture, performance optimization, and long-term technical vision.
+    </p>
+</section>
+
+<!-- CAREER TIMELINE -->
+
+<section class="section">
+    <h2>Career Timeline</h2>
+
+   <div class="timeline-item">
+		<h3>.Net Core Lead – Infosys</h3>
+		<span>Starting 2026</span>
+		<ul>
+			<li>Upcoming leadership role in enterprise application delivery.</li>
+			<li>Will be leading cross-functional teams and scalable system initiatives.</li>
+		</ul>
+    </div>
+
+
+    <div class="timeline-item">
+        <h3>Software Engineer – Neosoft</h3>
+        <span>2024 – 2026</span>
+        <ul>
+         <li>Resolved VAPT-identified security vulnerabilities in .NET applications by applying secure coding practices and ensuring timely closure of high- and medium-risk issues.</li>
+		<li>Developed offer letter template creation functionality for a hiring application, enabling dynamic content generation and standardized hiring workflows.</li>
+		<li>Designed and implemented an employee requisition module with multi-level approval workflows based on roles and authorization levels.</li>
+		<li>Built loan module APIs to handle eligibility checks, loan applications, and service request creation, processing 274 applications to date.</li>
+		<li>Introduced innovative functionalities previously unused within the project and organization, enhancing overall system capabilities and setting new development standards.</li>
+		<li>Migrated and upgraded existing API frameworks to higher .NET versions, improving system throughput and performance.</li>
+		<li>Worked on Python-based resume parsing to extract candidate details such as skills, experience, and education for hiring workflows.</li>
+		<li>Developed activity-based attendance features in the employee portal for accurate attendance tracking.</li>
+		<li>Optimized Oracle SQL stored procedures and views to improve query performance and overall system efficiency.</li>
+		<li>Integrated SOAP services and Gupshup messaging APIs for reliable communication with external platforms.</li>
+		<li>Improved API response performance, reducing application load times.</li>
+		<li>Created and maintained API documentation to support development and enable smoother team onboarding.</li>
+		<li>Enhanced UI components using jQuery to improve usability and user interaction.</li>
+		<li>Developed an HR Dashboard in React with multiple filtering capabilities.</li>
+
+        </ul>
+    </div>
+	
+	 <div class="timeline-item">
+        <h3>Software Developer – Infomaze Elite Pvt. Ltd., Mysore, India </h3>
+        <span>2021 – 2024</span>
+        <ul>
+            <li>Built a planning tool to streamline internal workflows and day-to-day operations.</li>
+			<li>Developed a report generation module to reduce manual effort and improve reporting accuracy.</li>
+			<li>Built a visit board dashboard displaying onsite visits based on status and date/time.</li>
+			<li>Integrated Google Maps API to enable location-based features within the application.</li>
+			<li>Mentored freshers, resolved technical and functional queries, and supported their day-to-day tasks.</li>
+			<li>Coordinated daily updates with QA to track progress, bug fixes, and release readiness.</li>
+			<li>Shared regular team status, risks, and delivery updates with the CTO.</li>
+			<li>Managed cross-team coordination to ensure project delivery stayed on track.</li>
+			<li>Collaborated directly with a US-based (Texas) client on the ELEMENTIQ project, gathered requirements, delivered solutions, and received positive client feedback.</li>
+			<li>Implemented centralized error handling across the application and built an error-logging dashboard to help developers quickly identify and resolve issues.</li>
+
+        </ul>
+    </div>
+	<div class="timeline-item">
+			<h3>Implementation Engineer – Sukruthi Infotech, Mysore, India  </h3>
+			<span>2020 – 2021</span>
+			<ul>
+				<li>Resolved production bugs within defined SLAs to ensure stable and smooth system operations.</li>
+				<li>Tracked and managed issues using Atlassian JIRA, maintaining backlog control and timely resolution.</li>
+				<li>Worked on desktop applications with a focus on performance tuning and memory optimization.</li>
+				<li>Provided client support for SQL connectivity, EXE deployments, and database setup, resolving application-related issues.</li>
+				<li>Supported the Team Lead by taking ownership of assigned tasks and ensuring timely follow-ups.</li>
+
+			</ul>
+		</div>
+</section>
+
+<!-- PROJECTS -->
+
+<section class="section">
+    <h2>Key Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Enterprise Claims Processing System</h3>
+            <p>
+                Built scalable backend APIs using .NET Core. 
+                Implemented authentication, optimized performance, 
+                and handled high-volume transactional data.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Internal Workflow Automation Tool</h3>
+            <p>
+                Developed Angular frontend integrated with secure APIs. 
+                Reduced manual processing time and improved team productivity.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LEADERSHIP -->
+
+<section class="section">
+    <h2>Leadership & Management</h2>
+    <ul class="leadership-list">
+        <li>Mentored junior developers and conducted code reviews.</li>
+        <li>Owned sprint estimations and technical planning.</li>
+        <li>Led architecture discussions and technical decision-making.</li>
+        <li>Managed stakeholder communication and risk mitigation.</li>
+    </ul>
+</section>
+
+<!-- TECH STACK -->
+
+<section class="section">
+    <h2>Tech Stack</h2>
+
+    <div class="tech-grid">
+
+        <div class="tech-card">
+            <h4>Backend</h4>
+            <p>.NET Core, ASP.NET Web API, MVC, C#</p>
+        </div>
+
+        <div class="tech-card">
+            <h4>Frontend</h4>
+            <p>Angular, React, HTML, CSS</p>
+        </div>
+
+        <div class="tech-card">
+            <h4>Database</h4>
+            <p>SQL Server, Oracle SQL</p>
+        </div>
+
+        <div class="tech-card">
+            <h4>Architecture</h4>
+            <p>Microservices, REST APIs, Clean Architecture</p>
+        </div>
+
+        <div class="tech-card">
+            <h4>Tools & DevOps</h4>
+            <p>Git, Azure DevOps, IIS, CI/CD</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+© 2026 Shreyas K | Engineering Leadership & Scalable Systems
+</footer>
+
+</body>
+</html>

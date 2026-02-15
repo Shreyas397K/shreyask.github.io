@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinema | Shreyas K</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --red:#E10600;
+    --blue:#0B3D91;
+    --dark:#111111;
+    --gray:#6b7280;
+    --light:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:white;
+    color:var(--dark);
+    line-height:1.7;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    box-shadow:0 2px 15px rgba(0,0,0,0.05);
+    background:white;
+}
+
+nav h2 span{
+    color:var(--red);
+}
+
+nav a{
+    text-decoration:none;
+    font-weight:600;
+    color:var(--dark);
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    padding:120px 8% 80px 8%;
+    text-align:center;
+    background:linear-gradient(to bottom, #ffffff, #f9fafb);
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    background:linear-gradient(135deg,var(--red),var(--blue));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:var(--gray);
+    font-size:18px;
+}
+
+/* ===== SECTION ===== */
+
+.section{
+    padding:90px 8%;
+    max-width:1000px;
+    margin:auto;
+}
+
+.section h2{
+    font-size:30px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.section h2::after{
+    content:'';
+    width:70px;
+    height:4px;
+    background:linear-gradient(90deg,var(--red),var(--blue));
+    display:block;
+    margin-top:10px;
+}
+
+.section p{
+    color:var(--gray);
+    margin-bottom:18px;
+}
+
+/* ===== IDEA CARDS ===== */
+
+.idea-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.idea-card{
+    padding:28px;
+    border-radius:15px;
+    background:#f9fafb;
+    border:1px solid rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.idea-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+.idea-card h3{
+    margin-bottom:10px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:var(--dark);
+    color:white;
+    margin-top:80px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>SHREYAS <span>K</span></h2>
+    <a href="index.html">← Back to Home</a>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+    <h1>Technology Meets <span>Storytelling</span></h1>
+    <p>
+        Cinema is not just entertainment — it is emotion structured into narrative.
+        My interest in storytelling explores character psychology, visual framing,
+        and the power of disciplined creative execution.
+    </p>
+</section>
+
+<!-- PHILOSOPHY -->
+
+<section class="section">
+    <h2>Creative Philosophy</h2>
+    <p>
+        I believe strong stories are built the same way strong systems are built —
+        with structure, clarity, intention, and emotional intelligence.
+    </p>
+    <p>
+        Whether it is screenwriting, character arcs, or visual storytelling,
+        I am deeply interested in blending logic with imagination.
+    </p>
+</section>
+
+<!-- EXPLORATION AREAS -->
+
+<section class="section">
+    <h2>Exploration Areas</h2>
+
+    <div class="idea-grid">
+
+        <div class="idea-card">
+            <h3>Character-Driven Narratives</h3>
+            <p>Exploring layered protagonists shaped by responsibility, identity, and transformation.</p>
+        </div>
+
+        <div class="idea-card">
+            <h3>Tech-Integrated Storytelling</h3>
+            <p>Bridging engineering thinking with cinematic structure and world-building concepts.</p>
+        </div>
+
+        <div class="idea-card">
+            <h3>Independent Creative Ventures</h3>
+            <p>Long-term vision of collaborating on meaningful projects that inspire impact.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LONG TERM VISION -->
+
+<section class="section">
+    <h2>Long-Term Vision</h2>
+    <p>
+        The goal is not immediate fame, but disciplined creative contribution.
+        Building projects that reflect depth, integrity, and thoughtful storytelling.
+    </p>
+</section>
+
+<footer>
+© 2026 Shreyas K | Engineering Logic. Cinematic Vision.
+</footer>
+
+</body>
+</html>
